@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVRDevices\StormAudioDevice.cs" />
     <Compile Include="AVRDevices\IAVRDevice.cs" />
     <Compile Include="HTPCAVRVolume.cs">
       <SubType>Form</SubType>

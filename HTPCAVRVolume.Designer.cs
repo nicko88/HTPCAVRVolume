@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HTPCAVRVolume));
             this.btnVolUp = new System.Windows.Forms.Button();
             this.btnVolDown = new System.Windows.Forms.Button();
             this.btnToggleMute = new System.Windows.Forms.Button();
@@ -75,7 +74,8 @@
             // 
             this.cmbDevice.FormattingEnabled = true;
             this.cmbDevice.Items.AddRange(new object[] {
-            "DenonMarantz"});
+            "DenonMarantz",
+            "StormAudio"});
             this.cmbDevice.Location = new System.Drawing.Point(62, 12);
             this.cmbDevice.Name = "cmbDevice";
             this.cmbDevice.Size = new System.Drawing.Size(131, 21);
@@ -118,7 +118,6 @@
             // 
             // notifyIcon
             // 
-            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
             this.notifyIcon.Text = "HTPCAVRVolume";
             this.notifyIcon.Visible = true;
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon_MouseDoubleClick);
@@ -137,7 +136,6 @@
             this.Controls.Add(this.btnVolDown);
             this.Controls.Add(this.btnVolUp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "HTPCAVRVolume";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

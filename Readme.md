@@ -18,9 +18,13 @@ The only supported controls are:
 
 ### Supported AVRs
 
-At this time, the only supported AVRs are modern Denon and Marantz units with network control.
+* Denon
+* Marantz
+* StormAudio
 
-Support for other AVRs could be pretty easily added to the existing code though.
+Support for other AVRs could be pretty easily added to the existing code.
+
+Please contact me if you would like me to support another AVR, especially if it's one already supported by [HTWebRemote](https://github.com/nicko88/HTWebRemote)
 
 ### How To Use
 

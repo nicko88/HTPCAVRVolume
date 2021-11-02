@@ -53,6 +53,9 @@ namespace HTPCAVRVolume
                     case "DenonMarantz":
                         _AVR = new AVRDevices.DenonMarantzDevice(tbIP.Text);
                         break;
+                    case "StormAudio":
+                        _AVR = new AVRDevices.StormAudioDevice(tbIP.Text);
+                        break;
                 }
             }
             catch { }
@@ -90,7 +93,10 @@ namespace HTPCAVRVolume
                 File.WriteAllText(config, cmbDevice.SelectedItem.ToString() + "=" + tbIP.Text);
                 LoadDevice();
             }
-            catch { }
+            catch
+            {
+                MessageBox.Show("Try running as Administrator and saving your config again.", "Error saving config");
+            }
         }
 
         private void BtnVolUp_Click(object sender, EventArgs e)
